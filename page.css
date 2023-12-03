@@ -1,0 +1,600 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(235, 230, 224);
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #4267B2;
+    flex-wrap: wrap;
+    height: 10vh;
+    position: fixed;
+}
+
+
+
+nav #logo{
+    max-width: 250px;
+    margin-left: 80px;
+    height: 6vh;
+  
+}
+nav #noti , #inb ,#vid {
+    max-width: 30px ;
+    margin-left: 35px;
+    cursor:pointer;
+}
+
+nav .search{
+    display: flex;
+    margin-left: 40%;
+    align-items: center;
+}
+
+nav #tex{
+    padding-left: 30px;
+    height: 5vh;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    width: 300px ;
+    font-size: 14px;
+    
+}
+nav #ser{
+    position: absolute;
+    max-width: 12px ;
+    cursor:pointer;
+   
+    margin-left: 12px;
+}
+nav .profile{
+    display: flex;
+    margin-left: 2%;
+}
+nav #pro{
+   
+    max-width: 40px ;
+    border-radius: 50%;
+}
+
+nav #dot{
+    max-width: 12px ;
+    position: absolute;
+    margin-bottom: 30px;
+    margin-left: 27.8px;
+}
+
+ /*<------------------>
+ /* profile - Background pic */
+
+ .main{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+}
+
+.main img{
+    max-width:  70%;
+    margin-left: 15%;
+    border-radius: 8px;
+    margin-top: 5%;
+    
+}
+
+/* profile details*/
+
+.prf-data{
+    display: flex;
+    max-width: 70%;
+    height: 20vh;
+    margin-top: 5px;
+    margin-left: 15%;
+    background-color: rgb(252, 245, 245);
+}
+
+.prf-data #pro-pic{
+    width: 100px;
+    height: 14vh;
+    margin-left: 18px;
+    margin-top: 18px;
+    border-radius: 5px;
+    
+}
+
+.prf-data .frnmu{
+    display: flex;
+    margin-left: 25px;
+    gap: 5px;
+    margin-top: 5px;
+}
+.prf-data #name{
+    margin-left: 25px;
+    margin-top: 20px;
+    width: 200px;
+    font-size: 30px;
+    height: 4vh;
+   
+}
+
+.details img{
+    max-width: 30px;
+    margin-top: 18px;
+    border-radius: 50%;
+    
+}
+.details #img1{
+    margin-left: 25px;
+}
+
+ .right{
+    display: flex;
+    width: 250px;
+    flex-direction: column;
+    
+    margin-left: 40%;
+}
+.right section{
+    display: flex;
+    justify-content: space-between;
+}
+.right section img{
+    max-width: 20px;
+
+}
+.right .rt-frnd{
+    background-color: rgb(235, 230, 224);
+    width: 90px;
+    align-items: center;
+    justify-content: center;
+    height: 4vh;
+    cursor: pointer;
+}
+.right .rt-mes{
+    background-color: #4267B2;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    height: 4vh;
+    color: white;
+    cursor: pointer;
+}
+
+.right .rt-frnd ,.rt-mes{
+    display: flex;
+    margin-top: 20px;
+    gap: 5px;
+}
+.right .mr{
+    cursor: pointer;
+    height: 3vh;
+    background-color: rgb(235, 230, 224);
+    width: 50px;
+    margin-top: 50px;
+    margin-left: 200px;
+    
+}
+.right #more{
+    width: 20px;
+    margin-left: 27%;
+}
+
+
+/* Middle section */
+.middle {
+    display:grid;
+    grid-template-areas: 'intr tho '
+                          'intr post '
+                          'pho post '; 
+    row-gap: 15px;
+    column-gap: 1px;
+    max-width: 87%;
+}
+
+.intro{
+    background-color:rgb(252, 245, 245);
+    width: 350px;
+    margin-left: 228px;
+    margin-top: 20px;
+    min-height: 40vh;
+    grid-area: intr;
+}
+
+.intro #one{
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: 18px;
+    font-weight: bold;
+}
+
+.intro #two{
+    margin-left: 50px;
+    margin-top: 10px;
+    font-family: serif;
+}
+
+.intro #two span{
+    margin-left: 40px;
+}
+
+.intro #three{
+    margin-left: 25px;
+    margin-bottom: 20px;
+   
+}
+.intro .dr ,.liv,.loc,.del,.std{
+    display:flex ;
+    
+    align-items: center;
+    gap: 10px;
+    margin-left: 25px;
+    padding-bottom: 10px;
+}
+.intro .dr img{
+    max-width: 20px;
+   
+}
+.intro .std img{
+    max-width: 20px;
+   
+}
+.intro .liv img{
+    max-width: 20px;
+   
+}
+.intro .loc img{
+    max-width: 20px;
+   
+}
+.intro .del img{
+    max-width: 20px;
+   
+}
+
+
+
+.middle .tho{
+    background-color: rgb(252, 245, 245);
+    width: 680px;
+    margin-top: 20px;
+    height: 25vh;
+    grid-area: tho;
+}
+
+.tho .one{
+    display: flex;
+    margin-bottom: 25px;
+}
+
+
+.tho .one img{
+    max-width: 50px;
+    margin-top: 18px;
+    margin-left: 20px;
+    border-radius: 50%;
+}
+.tho .one p{
+   margin-left: 10px;
+   margin-top: 25px;
+   font-family:  Arial, sans-serif; 
+   
+   
+}
+.tho .one  span{
+    font-size: small;
+    
+}
+.tho .one #arrow{
+    rotate: 90deg;
+    max-width: 10px;
+    height: 10px;
+    position: absolute;
+    margin-left: 122px;
+    margin-top: 47px;
+    cursor: pointer;
+}
+
+.tho .mind{
+    margin-left: 80px;
+}
+
+.tho .two{
+    display: flex;
+    margin-left: 80px;
+    margin-top: 12px;
+}
+.tho .two img{
+    width: 20px;
+    height: 2.5vh;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.tho .two p{
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+
+
+.middle .photos{
+    grid-area: pho;
+    background-color: rgb(252, 245, 245);
+    width: 350px;
+    margin-left: 228px;
+    margin-top: 20px;
+    min-height: 48vh;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.middle .photos p{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: larger;
+    
+}
+.middle .photos a{
+    margin-top: 5px;
+    margin-left: 20px;
+}
+.middle .photos img{
+    margin-left: 10px;
+    margin-top: 20px;
+    max-width: 100px;
+    height: 15vh;
+    gap: 5px;
+}
+.middle .post{
+    grid-area: post;
+    width: 680px;
+    height: 73vh;
+    background-color: rgb(252, 245, 245);
+    margin-bottom: 50px;
+}
+
+.post .one{
+    display: flex;
+    margin-bottom: 25px;
+}
+
+
+ .post .one #por{
+    max-width: 50px;
+    margin-top: 18px;
+    margin-left: 20px;
+    border-radius: 50%;
+}
+ .post .one p{
+   margin-left: 10px;
+   margin-top: 25px;
+   font-family:  Arial, sans-serif; 
+   
+   
+}
+ .post .one  span{
+    font-size: small;
+    
+}
+ .post .one #more{
+    width: 20px;
+    height: .5vh;
+    margin-left: 60%;
+    margin-top: 50px;
+    rotate: 90deg;
+    cursor: pointer;
+}
+ .post #des{
+    margin-left: 20px;
+    font-family:  sans-serif;
+    
+}
+.post #one{
+    color: rgb(21, 20, 20);
+    font-weight: bolder ;
+}
+ .post #two{
+    color: #4267B2;
+}
+ .post #feed{
+    max-width: 630px;
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+.post .low{
+    display: flex;
+    margin-left: 0px;
+    margin-top: 10px;
+}
+.post .low img{
+    max-width: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.post .low p{
+    margin-left: 10px;
+}
+.post .low #prof{
+    margin-left: 60%;
+    border-radius: 50%;
+}
+
+
+@media screen and (max-width: 1500px) {
+    nav .search{
+        display: flex;
+        margin-left: 25%;
+    }
+    .right{
+        margin-left: 37%;
+        margin-top: 0;
+    }
+  
+    
+ 
+}
+@media screen and (max-width: 1300px) {
+    nav .search{
+        display: flex;
+        margin-left: 25%;
+    }
+    .main{
+        height: 50vh;
+    }
+    .main img{
+        margin-top: 100px;
+        margin-bottom: 30px;
+    }
+    
+    .right{
+        margin-left: 30%;
+        
+    }
+   
+ 
+}
+@media screen and (max-width: 1190px) {
+    nav .search{
+        display: flex;
+        margin-left: 15%;
+
+    }
+    .main{
+        height: 50vh;
+    }
+    .main img{
+        margin-top: 100px;
+        margin-bottom: 10px;
+    }
+    
+    .right{
+        margin-left: 25%;
+        
+    }
+    
+}
+
+
+@media screen and (max-width: 1070px) {
+    nav .search{
+        display: flex;
+        margin-left: 15%;
+    }
+    .main{
+       height: 45vh;
+    }
+    .main img{
+        max-width:  70%;
+        margin-top: 100px;
+        margin-bottom: 20px;
+    }
+    .right{
+        margin-left: 15%;
+        
+    }
+
+    
+}
+@media screen and (max-width: 1048px) {
+    nav .search{
+        display: flex;
+        margin-left: 15%;
+    }
+    nav #logo{
+        max-width: 80px;
+        margin-left: 40px;
+        height: 3vh;
+      
+    }
+}
+@media screen and (max-width: 794px) {
+    nav .search{
+        display: flex;
+        margin-left: 15%;
+    }
+    nav #logo{
+        max-width: 80px;
+        margin-left: 40px;
+        height: 3vh;
+      
+    }
+    nav #tex{
+       height: 4vh;
+        width: 150px ;
+        
+    }
+
+}
+@media screen and (max-width: 612px) {
+    nav #logo{
+        max-width: 80px;
+        margin-left: 40px;
+        height: 3vh;
+      
+    }
+    nav #noti , #inb ,#vid {
+        max-width: 15px ;
+        margin-left: 15px;
+    }
+    nav .search{
+        display: flex;
+        margin-left: 5%;
+        align-items: center;
+    }
+
+    nav #tex{
+       
+        height: 3vh;
+      
+        width: 100px ;
+       
+        }
+    nav #pro{
+
+        max-width: 30px ;
+        border-radius: 50%;
+    }
+    .main img{
+        
+        margin-top: 10%;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    nav #logo{
+        max-width: 100px;
+        margin-left: 10px;
+        height: 6vh;
+      
+    }
+    nav #noti , #inb ,#vid {
+        max-width: 30px ;
+        margin-left: 10px;
+    }
+    nav .search{
+        display: flex;
+        margin-left: 5%;
+        align-items: center;
+    }
+
+    nav #tex{
+       
+        height: 3vh;
+       
+        width: 100px ;
+        
+        }
+    nav #pro{
+        max-width: 30px ;
+        border-radius: 50%;
+    }
+
+}
